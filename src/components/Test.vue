@@ -13,9 +13,9 @@
           v-for="(record, index) in searchResult"
           :key="index"
         >
-          <span>{{ record.name }}</span>
-          <span>{{ record.version }}</span>
-          <span>{{ record.authorName }}</span>
+          <span>{{ record["name"] }}</span>
+          <span>{{ record["version"] }}</span>
+          <span>{{ record["authorName"] }}</span>
         </li>
       </ul>
     </div>
@@ -32,7 +32,6 @@
 .form {
   display: flex;
   gap: 1rem;
-  /* justify-content: center; */
 }
 
 .result {
